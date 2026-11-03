@@ -1,0 +1,92 @@
+#include<iostream>
+#include<string>
+#include<cctype>
+#include<algorithm>
+using namespace std;
+class Xe{
+	private:
+		int maXe;
+		string loaiXe;
+		int gioVao;
+		int gioDo;
+		double phidoXe;
+		bool dangchiemCho;
+		public:
+			Xe(){
+				int maXe=0;
+				string loaiXe="";
+				int gioVao=0;
+				int gioDo=0;
+				double phidoXe=0;
+				bool dangchiemCho= false;
+			}
+			Xe(int maXe, string loaiXe, int gioVao, int gioDo, double phidoXe, bool dangchiemCho ){
+				
+				maXe = maXe;
+				loaiXe=loaiXe;
+				gioVao =gioVao;
+				gioDo= gioDo;
+				phidoXe =phidoXe;
+				dangchiemCho= dangchiemCho;
+		    };
+			int laymaXe() const{
+				return maXe;
+			 	
+			};
+			
+			string getlayloaiXe() const{
+				return loaiXe;
+			};
+			int getlaygioVao()const{
+				return gioVao;
+			};
+			
+			int getlaytgianDo() const{
+				return gioDo;
+			};
+			int getlayphidoXe() const{
+				return phidoXe;
+			};
+			bool getlaydangchiemCho() const{
+				return dangchiemCho;
+			};
+			void setganmaXe(int ma){
+				
+				maXe=ma;
+			};
+			void setganloaiXe(string loai){
+				if(laloaixehople(loai)){
+					loaiXe= loai
+				}
+				
+				
+				
+			//	std::string temp = loai;
+			//	for(char &c : temp){
+			//		c = tolower(c);
+			//	};
+			//	if(temp == "car"){
+			//		loai = "Car";
+			//	} else if( temp == "motorcycle"){
+			//		loai="Motorcycle";
+			//	}else if(temp =="bicycle"){
+			//		loai = "Bicycle";
+			//	}else{
+			//		cout<<"Loi chi nhan 3 loai xe: Car, Motorcycle, Bicycle!\n";
+			//	};	
+			};
+			void setgangioVao(int gio){
+				gioDo= gio;
+			};
+			void setganthoiluongdo(int thoiLuong){
+				gioDo= thoiLuong;
+			};
+			void setganphidoXe( double phi){
+				phidoXe= phi;
+			};
+			
+			
+			
+	
+		
+};
